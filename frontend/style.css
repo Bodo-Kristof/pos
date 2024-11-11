@@ -12,21 +12,22 @@ body {
     padding: 20px;
     border-right: 1px solid #ddd;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* Szorosabb elrendezés */
     gap: 10px;
     overflow-y: auto;
 }
 
 /* Ital gombok */
 .drink-btn {
-    padding: 15px 20px;
-    font-size: 16px;
+    padding: 12px 15px; /* Kisebb margó, hogy elférjenek */
+    font-size: 14px; /* Csökkentett betűméret */
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
     font-weight: bold;
+    width: 100%; /* Biztosítja, hogy a gombok ne csússzanak el */
 }
 
 /* Ital típus színek */
