@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: 100vh;
+    background-color: #000; /* Fekete háttér */
+    color: white;
+    display: flex;
+}
+
+.drink-container {
+    flex: 2;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 10px;
+    overflow-y: auto;
+}
+
+/* Ital gombok */
+.drink-btn {
+    padding: 15px 20px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+/* Ital típus színek */
+.vodka { background-color: #e6e6e6; color: black; }
+.gin { background-color: #f79c42; }
+.whiskey { background-color: #9e7d3f; }
+.tequila { background-color: #ffb84d; }
+.pezsgo { background-color: #ff66b3; }
+.bor { background-color: #990000; }
+.unicum { background-color: #8a5e3d; }
+.jagermeister { background-color: #4b8f3d; }
+.nonalcoholic { background-color: #5c7f8e; }
+
+/* Rendelések panel */
+.order-container {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100%;
+}
+
+h1 {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.order-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex: 1;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.order-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #333;
+    border: 1px solid #444;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.order-name {
+    padding-right: 10px;
+    font-weight: bold;
+}
+
+.quantity {
+    text-align: center;
+    padding-left: 10px;
+}
+
+.delete-btn {
+    background-color: red;
+    color: white;
+    margin-top: 10px;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 6px; /* Négyzetesebb */
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.delete-btn:hover {
+    background-color: darkred;
+}
+
+/* Responsív beállítások */
+@media (max-width: 768px) {
+    /* Kisebb képernyőkön (pl. tablet) */
+    .drink-container {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+
+    /* Kisebb képernyőkön (pl. mobil) a gombok kisebbek legyenek */
+    .drink-btn {
+        font-size: 14px;
+        padding: 12px 15px;
+    }
+
+    /* A rendelési lista szélességét csökkentjük */
+    .order-container {
+        padding: 10px;
+    }
+
+    .order-item {
+        grid-template-columns: 1fr 1fr 40px; /* Jobban elfér a törlés gomb */
+    }
+
+    /* A mennyiség és az ital név jobban elférjen */
+    .order-name {
+        font-size: 14px;
+    }
+
+    .quantity {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Mobiltelefonokon még kisebb képernyő esetén */
+    .drink-container {
+        grid-template-columns: 1fr; /* Egy oszlop */
+    }
+
+    .drink-btn {
+        font-size: 12px;
+        padding: 10px 12px;
+    }
+
+    /* A rendelési lista teljes szélessége */
+    .order-container {
+        padding: 5px;
+    }
+}
