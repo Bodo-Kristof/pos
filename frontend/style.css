@@ -20,7 +20,7 @@ body {
 /* Ital gombok */
 .drink-btn {
     padding: 12px 15px; /* Kisebb margó, hogy elférjenek */
-    font-size: 14px; /* Csökkentett betűméret */
+    font-size: 16px; /* Csökkentett betűméret */
     color: white;
     border: none;
     border-radius: 5px;
