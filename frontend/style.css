@@ -40,6 +40,8 @@ body {
 .unicum { background-color: #8a5e3d; }
 .jagermeister { background-color: #4b8f3d; }
 .nonalcoholic { background-color: #5c7f8e; }
+.blue { background-color: aqua; color: black; }
+.sor { background: linear-gradient(180deg, hsla(0, 0%, 100%, 1) 15%, hsla(28, 100%, 45%, 1) 100%); color: black;}
 
 /* Rendelések panel */
 .order-container {
