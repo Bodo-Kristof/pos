@@ -41,7 +41,13 @@ body {
 .jagermeister { background-color: #4b8f3d; }
 .nonalcoholic { background-color: #5c7f8e; }
 .blue { background-color: aqua; color: black; }
-.sor { background: linear-gradient(180deg, hsla(0, 0%, 100%, 1) 15%, hsla(28, 100%, 45%, 1) 100%); color: black;}
+.sor { background: linear-gradient(180deg, hsla(0, 0%, 100%, 1) 0%, hsla(28, 100%, 45%, 1) 35%); color: black;}
+.dblue { background-color: darkblue;}
+.baileys { background-color: #ac683f; color: black;}
+.palinka { background-color: white; color: black;}
+.rum { background-color: rgb(81, 210, 30); color: black;}
+.egyeb { background-color: rgb(255, 132, 0); color: black;}
+.kave { background-color: brown;}
 
 /* Rendelések panel */
 .order-container {
