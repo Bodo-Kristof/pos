@@ -46,8 +46,11 @@ body {
 .baileys { background-color: #ac683f; color: black;}
 .palinka { background-color: white; color: black;}
 .rum { background-color: rgb(81, 210, 30); color: black;}
-.egyeb { background-color: rgb(255, 132, 0); color: black;}
+.egyeb { background-color: rgb(19, 19, 19); color: rgb(255, 255, 255); border: 2px solid white;}
 .kave { background-color: brown;}
+.malibu { background-color: rgb(113, 202, 231); color: black; }
+.aperol { background-color: #e05725; }
+.hell { background-color: black; border: 3px solid red;}
 
 /* Rendelések panel */
 .order-container {
